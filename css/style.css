@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fce4f1, #e3f2fd);
+  padding: 40px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #60a5fa;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+}
+
+#app {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #ffffffcc;
+  border-radius: 16px;
+  padding: 20px;
+  border: 2px solid #bae6fd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  border-color: #ec4899;
+  box-shadow: 0 15px 35px rgba(236, 72, 153, 0.25);
+}
+
+.card.ativo {
+  transform: scale(1.08);
+  border-color: #3b82f6;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  color: #1e3a8a;
+  margin-bottom: 8px;
+}
+
+.card .empresa {
+  color: #ec4899;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.card .descricao {
+  font-size: 0.9rem;
+  color: #374151;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  max-height: 90px;
+  overflow: hidden;
+}
+
+.tipo {
+  display: inline-block;
+  width: fit-content;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.tipo.remota {
+  background: #dbeafe;
+  color: #1d4ed8;
+  border: 1px solid #60a5fa;
+}
+
+.tipo.presencial {
+  background: #ffe4e6;
+  color: #be123c;
+  border: 1px solid #fb7185;
+}
+
+.card a {
+  text-decoration: none;
+  text-align: center;
+  padding: 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #60a5fa, #ec4899);
+  transition: all 0.3s ease;
+}
+
+.card a:hover {
+  filter: brightness(1.1);
+  transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+

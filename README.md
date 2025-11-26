@@ -9,28 +9,29 @@
 
 ## 👩‍💻 Equipe de Desenvolvimento
 
-- **Gabrielli Borba** – Product Owner / Back-end Developer  
-- **[Adicione aqui os nomes dos colegas do grupo]**
+- **Gabrielli Borba** – Product Owner / Full Stack Developer  
+- **Gabriela Lima** – Product Owner / Full Stack Developer  
 
 ---
 
 ## 🧠 Sobre o Projeto
 
-O **JobAi** é uma plataforma web voltada para a **divulgação de vagas de emprego**, permitindo que os usuários explorem oportunidades e vejam detalhes de cada vaga de forma simples e intuitiva.  
+O **JobAi** é uma plataforma web voltada para a **divulgação de vagas de emprego**, permitindo que os usuários explorem oportunidades e vejam detalhes de cada vaga de forma simples e intuitiva.
 
-O projeto consome dados de uma **API pública real** e os exibe em **cards responsivos**, aplicando os princípios da **Programação Orientada a Objetos em JavaScript**.
+O projeto consome dados de uma **API pública real** e os exibe em **cards modernos e interativos**, aplicando os princípios da **Programação Orientada a Objetos em JavaScript** e **comunicação assíncrona com APIs**.
 
-> 💡 *Nosso objetivo é demonstrar como conceitos de POO e comunicação assíncrona com APIs podem ser usados para construir aplicações reais e dinâmicas.*
+> 💡 *O objetivo do projeto é demonstrar como conceitos de POO, Promises e Async/Await podem ser usados na construção de aplicações reais e dinâmicas.*
 
 ---
 
 ## 🎯 Objetivos de Aprendizagem
 
-- Aplicar **conceitos de POO em JavaScript** (objetos, herança e funções construtoras)  
-- Utilizar **Promises e async/await** em requisições assíncronas  
-- Manipular dados obtidos de uma **API externa real**  
-- Implementar **responsividade e interatividade** na interface  
-- Demonstrar boas práticas de organização de código e modularização  
+- Aplicar **conceitos de POO em JavaScript**  
+- Utilizar **Promises e async/await**  
+- Consumir dados de uma **API externa real**  
+- Manipular dados com JavaScript  
+- Criar **interface interativa com cards animados**  
+- Organizar código em módulos  
 
 ---
 
@@ -38,19 +39,20 @@ O projeto consome dados de uma **API pública real** e os exibe em **cards respo
 
 | Categoria | Tecnologias |
 |------------|-------------|
-| **Front-end** | HTML5, CSS3 (ou Tailwind/Bootstrap) |
-| **Linguagem** | JavaScript (ES6+) |
+| **Front-end** | HTML5, CSS3 |
+| **Linguagem** | JavaScript |
 | **Comunicação** | Fetch API, Promises, Async/Await |
-| **API** | [Arbeitnow Job Board API](https://www.arbeitnow.com/api/job-board-api) |
+| **API** | Arbeitnow Job Board API |
 
 ---
 
 ## 🌐 API Utilizada
 
-📍 **URL:** [https://www.arbeitnow.com/api/job-board-api](https://www.arbeitnow.com/api/job-board-api)
+📍 **URL:**  
+https://www.arbeitnow.com/api/job-board-api
 
 **Motivo da escolha:**  
-A API é pública, gratuita e fornece informações reais sobre vagas de emprego. Ela retorna os dados em **JSON**, facilitando a integração com o front-end e a aplicação prática dos conceitos de **requisições assíncronas** e **manipulação de objetos**.
+A API é pública, gratuita e fornece dados reais sobre vagas de emprego. Ela retorna os dados em formato **JSON**, ideal para trabalhar com **requisições assíncronas**, **objetos** e **manipulação de dados no front-end**.
 
 ---
 
@@ -58,31 +60,25 @@ A API é pública, gratuita e fornece informações reais sobre vagas de emprego
 
 | Conceito | Aplicação |
 |-----------|------------|
-| **Objetos Literais** | Configuração da API e constantes globais |
-| **Funções Construtoras** | Criação das entidades `Vaga` e `Usuario` |
-| **Herança Prototípica** | Implementação de `VagaFavorita` herdando propriedades de `Vaga` |
-| **Promises** | Simulação de carregamento e controle de requisições |
-| **Async/Await** | Comunicação com a API de vagas |
+| **Objetos Literais** | Configuração da API e constantes do sistema |
+| **Funções Construtoras / Classes** | Criação das entidades `Vaga`, `Categoria` e `VagaRemota` |
+| **Herança** | `VagaRemota` herdando propriedades de `Vaga` |
+| **Métodos de Classe** | Métodos como `exibirResumo()` |
+| **Promises** | Controle de fluxo de carregamento |
+| **Async/Await** | Requisições à API |
 
 ---
 
 ## 🧭 Estrutura do Projeto
 
+```bash
 /project-jobAi-platform
 │
 ├── index.html
 ├── /css
-│ └── style.css
+│   └── style.css
 ├── /js
-│ ├── api.js → Comunicação com a API
-│ ├── models.js → Classes e funções construtoras (POO)
-│ └── main.js → Manipulação do DOM e lógica principal
+│   ├── api.js       → Comunicação com a API
+│   ├── models.js   → Classes e conceitos de POO
+│   └── main.js     → Lógica principal e manipulação do DOM
 └── README.md
-
-## 🖥️ Como Executar o Projeto
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/Gabrielli-B/project-jobAi-platform.git
-
-   
